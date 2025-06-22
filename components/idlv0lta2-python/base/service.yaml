@@ -1,0 +1,14 @@
+apiVersion: v1
+kind: Service
+metadata: 
+  labels: 
+    app.kubernetes.io/instance: idlv0lta2-python
+    app.kubernetes.io/managed-by: kustomize
+    app.kubernetes.io/name: idlv0lta2-python 
+  name: idlv0lta2-python
+spec:
+  ports:
+  - port: 8081 
+    targetPort: 8081 
+  selector:
+    app.kubernetes.io/instance: idlv0lta2-python 
